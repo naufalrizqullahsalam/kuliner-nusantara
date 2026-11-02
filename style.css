@@ -1,0 +1,348 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ :root {
+     --brown: #5c3a21;
+     --gold: #d4af37;
+     --cream: #f8f1e7;
+     --black: #1a1a1a;
+ }
+
+ body {
+     background: var(--cream);
+     color: var(--black);
+ }
+
+ /* ==================== NAVBAR ==================== */
+
+ header {
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 8%;
+     background: white;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .logo img {
+     width: 50px;
+ }
+
+ .nav-menu {
+     display: flex;
+     gap: 35px;
+     list-style: none;
+ }
+
+ .nav-menu a {
+     text-decoration: none;
+     color: var(--black);
+     font-weight: 500;
+     transition: 0.3s;
+ }
+
+ .nav-menu a:hover {
+     color: var(--gold);
+ }
+
+ .hamburger {
+     display: none;
+ }
+
+ /* ==================== HERO ==================== */
+
+ .hero {
+     padding: 80px 8%;
+ }
+
+ .hero-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 50px;
+ }
+
+ .hero-text {
+     flex: 1;
+ }
+
+ .hero-text h1 {
+     font-size: 55px;
+     color: var(--brown);
+ }
+
+ .hero-text p {
+     margin: 25px 0;
+     font-size: 18px;
+ }
+
+ .hero-image img {
+     width: 500px;
+     border-radius: 30px;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+ }
+
+ .btn {
+     display: inline-block;
+     padding: 15px 30px;
+     border-radius: 30px;
+     text-decoration: none;
+     margin-right: 10px;
+ }
+
+ .primary {
+     background: var(--brown);
+     color: white;
+ }
+
+ .secondary {
+     border: 2px solid var(--brown);
+     color: var(--brown);
+ }
+
+ /* ==================== ABOUT ==================== */
+
+ .about {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+     padding: 80px 8%;
+ }
+
+ .about img {
+     width: 450px;
+     border-radius: 30px;
+ }
+
+ .about-card {
+     margin-top: 20px;
+     padding: 20px;
+     background: white;
+     border-radius: 20px;
+ }
+
+ /* ==================== MENU ==================== */
+
+ .menu {
+     padding: 80px 8%;
+ }
+
+ .title {
+     text-align: center;
+     font-size: 35px;
+     margin-bottom: 40px;
+     color: var(--brown);
+ }
+
+ .food-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+ }
+
+ .food-card {
+     width: 300px;
+     background: white;
+     border-radius: 20px;
+     overflow: hidden;
+     padding-bottom: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     transition: 0.3s;
+ }
+
+ .food-card:hover {
+     transform: translateY(-10px);
+ }
+
+ .food-card img {
+     width: 100%;
+     height: 220px;
+     object-fit: cover;
+ }
+
+ .food-card h3,
+ .food-card p,
+ .food-card h4 {
+     padding: 10px 20px;
+ }
+
+ .food-card button {
+     margin-left: 20px;
+     padding: 10px 25px;
+     background: var(--gold);
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+ /* DRINK */
+
+ .title {
+     text-align: center;
+     font-size: 35px;
+     margin-bottom: 40px;
+     color: var(--brown);
+ }
+
+ .drink-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+ }
+
+ .drink-card {
+     width: 300px;
+     background: white;
+     border-radius: 20px;
+     overflow: hidden;
+     padding-bottom: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+ }
+
+ .drink-card:hover {
+     transform: translateY(-10px);
+ }
+
+ .drink-card img {
+     width: 100%;
+     height: 220px;
+     object-fit: cover;
+     display: block;
+ }
+
+ .drink-card h3,
+ .drink-card p,
+ .drink-card h4 {
+     padding: 10px 20px;
+     margin: 0;
+ }
+
+ .drink-card button {
+     margin-left: 20px;
+     padding: 10px 25px;
+     background: var(--gold);
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+
+
+
+
+
+ /* ==================== GALLERY ==================== */
+
+ .gallery {
+     padding: 60px 8%;
+ }
+
+ .gallery-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ .gallery-container img {
+     width: calc(20% - 16px);
+     height: 180px;
+     object-fit: cover;
+     border-radius: 15px;
+     transition: 0.3s ease;
+     cursor: pointer;
+ }
+
+ .gallery-container img:hover {
+     transform: scale(1.05);
+ }
+
+
+ /* ==================== TESTIMONI ==================== */
+
+ .testimonial {
+     padding: 80px 8%;
+ }
+
+ .testimonial-container {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+ }
+
+ .test-card {
+     background: white;
+     padding: 30px;
+     border-radius: 20px;
+     width: 300px;
+ }
+
+ /* ==================== FOOTER ==================== */
+
+ footer {
+     background: var(--black);
+     color: white;
+     padding: 50px 8%;
+ }
+
+ .footer-container {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .copyright {
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ /* ==================== RESPONSIVE ==================== */
+
+ @media (max-width: 768px) {
+     .nav-menu {
+         display: none;
+     }
+
+     .hamburger {
+         display: block;
+         cursor: pointer;
+     }
+
+     .hero-content,
+     .about,
+     .footer-container,
+     .testimonial-container {
+         flex-direction: column;
+     }
+
+     .hero-text h1 {
+         font-size: 35px;
+     }
+
+     .hero-image img,
+     .about img {
+         width: 100%;
+     }
+
+     .gallery-container img {
+         width: 100%;
+     }
+ }
